@@ -48,10 +48,16 @@ ENTRYPOINT [ "/GoDockerSample" ]
 ```
 
 - Create Images
+```
 docker build -t docker_sample .
+```
 
 - Create Container
+```
 docker container create --name docker-sample --publish 1234:8080 docker_sample
+```
 
 - Run Container
+```
 docker container start docker-sample
+```
